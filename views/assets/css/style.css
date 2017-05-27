@@ -1,3 +1,14 @@
+.block{
+	background-color:#FFFFFF; 
+	width:1050px; 
+	height:250px;
+	margin:0 auto;
+	margin-bottom:20px;
+	border-radius:10px;
+}
+.block > table > tbody > tr > td{
+	color:#A4A4A4
+}
 body {
 	color:#444;
 	font:normal 16px "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
