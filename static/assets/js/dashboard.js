@@ -81,7 +81,7 @@ $(function(){
                         "<button type='button' class='btn remove_btn pull-right btn-info btn-sm' value="+data.id+">" +
                         "<span class='glyphicon glyphicon-remove'></span> Rwmove" +
                         "</button>" +
-                        "<button type='button' class='btn modify_btn pull-right btn-info btn-sm' value="+data.name+">" +
+                        "<button type='button' class='btn modify_btn pull-right btn-info btn-sm' value="+data.name+"_"+data.id+">" +
                         "<span class='glyphicon glyphicon-pencil'></span> modify" +
                         "</button>" +
                         " </div>" );
@@ -175,8 +175,9 @@ $(function(){
     });
 
     $( ".modify_btn" ).click(function() {
-        console.log($(this).val());
-        window.location.href = '/dataVisual/' + $(this).val() + '?mode=modify';
+        var name = $(this).val().split('_')[0];
+        var id = $(this).val().split('_')[1];
+        window.location.href = '/dataVisual/' + name + '?mode=modify&id=' + id;
     });
 
 
