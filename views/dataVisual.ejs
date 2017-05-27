@@ -227,25 +227,17 @@
 					</fieldset>
 					<fieldset>
 						<legend>X軸資料欄位</legend>
-						<label for="columnX1">資料欄位1</label>
-						<input type="radio" name="x" id="columnX1" value="資料欄位1">
-						<label for="columnX2">資料欄位2</label>
-						<input type="radio" name="x" id="columnX2" value="資料欄位2">
-						<label for="columnX3">資料欄位3</label>
-						<input type="radio" name="x" id="columnX3" value="資料欄位3">
-						<label for="columnX4">資料欄位4</label>
-						<input type="radio" name="x" id="columnX4" value="資料欄位4">
+                        <% data.column.forEach(function(element, i) { %>
+						<label for="columnX<%= i %>"><%= element.name %></label>
+						<input type="radio" name="x" id="columnX<%= i %>" value="<%= element.name %>">
+                        <% });%>
 					</fieldset>
 					<fieldset>
 						<legend>Y軸資料欄位</legend>
-						<label for="columnY1">資料欄位1</label>
-						<input type="radio" name="y" id="columnY1" value="資料欄位1">
-						<label for="columnY2">資料欄位2</label>
-						<input type="radio" name="y" id="columnY2" value="資料欄位2">
-						<label for="columnY3">資料欄位3</label>
-						<input type="radio" name="y" id="columnY3" value="資料欄位3">
-						<label for="columnY4">資料欄位4</label>
-						<input type="radio" name="y" id="columnY4" value="資料欄位4">
+                        <% data.column.forEach(function(element, i) { %>
+						<label for="columnY<%= i %>"><%= element.name %></label>
+						<input type="radio" name="y" id="columnY<%= i %>" value="<%= element.name %>">
+                        <% });%>
 					</fieldset>
 					<input class="submit" type="submit" name="submit" value="送出" />
 					<input class="submit" type="submit" name="revised" value="修改" />
@@ -280,7 +272,7 @@
 <script src="/assets/js/jquery.magnific-popup.min.js"></script>
 <script src="/assets/js/validate.js"></script>
 <script src="/assets/js/common.js"></script>
-<script src="/assets/js/dashboard.js"></script>
+
 
 
 
