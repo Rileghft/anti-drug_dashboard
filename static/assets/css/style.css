@@ -1,3 +1,23 @@
+#vischoice{
+	width:150px;
+	margin-right: 20px;
+	float: left;
+	
+}
+.bottom_content{
+    position: absolute;
+    bottom: 0;
+}
+.fileType-bg {
+    background: #FF3F6F;
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 3px 12px;
+    margin: 2px 4px;
+}
 .block{
 	background-color:#FFFFFF; 
 	width:1050px; 
@@ -6,7 +26,7 @@
 	margin-bottom:20px;
 	border-radius:10px;
 }
-.block > table > tbody > tr > td{
+.block > .content > font{
 	color:#A4A4A4
 }
 body {

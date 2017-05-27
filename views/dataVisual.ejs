@@ -24,15 +24,13 @@
 	<![endif]-->
 			
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="#">
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
 </head>
 <body>
 <!-- Begin Hero Bg -->
-<div id="parallax">
-</div>
+
 <!-- End Hero Bg
 	================================================== -->
 <!-- Start Header
@@ -74,25 +72,6 @@
 	</nav>
 </div>
 </header>
-<!-- Random
-	================================================== -->
-<section class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/3.jpg);">
-	<div class="wrapsection">
-	<div class="parallax-overlay"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 sol-sm-12">
-				<div class="maintitle">
-					<h3 class="section-title justtitle">Data presentation settings</h3>
-					<p class="lead bottom0 wow bounceInUp">
-						You can personalize the information what you want.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-</section>
 <!-- Gallery
 	================================================== -->
 <section id="gallery" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/2.jpg);">
@@ -185,7 +164,24 @@
 				</div>
 				<div>
 					<h4 >視覺化選項</h4>
-					<br>
+					<form>
+					<div id="vischoice">
+					<input id="100" type="radio" name="choice" value="histo"> 
+					<label for="100">長條圖</label>
+					</div>
+					<div id="vischoice">
+					<input id="101" type="radio" name="choice" value="pie">
+					<label for="101">圓餅圖</label>
+					</div>
+					<div id="vischoice">
+					<input id="102" type="radio" name="choice" value="xy_chart"> 
+					<label for="102">散布圖</label>
+					</div>
+					<div id="vischoice">
+					<input id="103" type="radio" name="choice" value="line">
+					<label for="103">折線圖</label>
+					</div>
+					</form>
 					<br>
 					<br>
 					<br>
@@ -193,7 +189,22 @@
 				</div>
 				<div>
 					<h4 >選擇資料欄位</h4>
-					<br>
+					<div id="vischoice">
+					<input id="104" type="checkbox" name="choice" value="data1"> 
+					<label for="104">資料欄位1</label>
+					</div>
+					<div id="vischoice">
+					<input id="105" type="checkbox" name="choice" value="data2">
+					<label for="105">資料欄位2</label>
+					</div>
+					<div id="vischoice">
+					<input id="106" type="checkbox" name="choice" value="data3"> 
+					<label for="106">資料欄位3</label>
+					</div>
+					<div id="vischoice">
+					<input id="107" type="checkbox" name="choice" value="data4">
+					<label for="107">資料欄位4</label>
+					</div>
 					<br>
 					<br>
 					<br>
