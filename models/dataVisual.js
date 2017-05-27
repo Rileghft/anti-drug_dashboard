@@ -31,6 +31,11 @@ let dataVisual = {
         params.columns = `[${colstr.join()}]`
         let result = await query(_sql, [params, compID])
         return result
+    },
+    async nameToID(name) {
+        let _sql = `SELECT id FROM datalist WHERE name=?`
+        let result = await query(_sql, [name])
+        return result[0]
     }
 }
 module.exports = dataVisual

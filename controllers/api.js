@@ -27,6 +27,13 @@ let dashboard = {
         let params = ctx.request.body
         let result = await dataVisual.removeComp(parseInt(params.id))
         ctx.body = result
+    },
+    async nameToID(ctx) {
+        let name = ctx.request.body.name
+        console.log(name)
+        let result = await dataVisual.nameToID(name)
+        console.log(result)
+        ctx.body = result
     }
 }
 
