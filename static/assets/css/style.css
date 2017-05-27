@@ -1,6 +1,40 @@
+.send{
+	float: right;
+}
+.data{
+	width: 800px;
+	margin: 0px auto;
+}
+.data>h4{
+	font-weight: bold;
+
+}
+.second>tr>th{
+	background-color: #dddddd;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 800px;
+	background: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+td, th {
+    border: 1px solid #848484;
+    text-align: left;
+    padding: 8px;
+	color: black;
+	border-style: dotted;
+}
+
+.first>tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
 #vischoice{
 	width:150px;
-	margin-right: 20px;
+	margin-left: 30px;
 	float: left;
 	
 }
@@ -118,7 +152,7 @@ img {
 }
 .section-title {
 	text-transform:uppercase;
-	font-size:30px;
+	font-size:38px;
 	letter-spacing:5px;
 }
 .whitecolor {
