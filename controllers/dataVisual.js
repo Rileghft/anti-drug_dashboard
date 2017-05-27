@@ -1,9 +1,8 @@
 const views = require('koa-views')
-const data = require('./data')
+const dataAPI = require('./data')
 let dataVisual = async(ctx) => {
-    await data.description(ctx)
-    console.log(ctx.body)
-    await ctx.render('dataVisual', rows=ctx.body)
+    await dataAPI.description(ctx)
+    await ctx.render('dataVisual', data=JSON.parse(ctx.body))
 }
 
 module.exports = dataVisual

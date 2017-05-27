@@ -11,8 +11,8 @@
 	<!-- Styles -->
 	<link rel='stylesheet' href='/assets/css/bootstrap.min.css'>
 	<link rel='stylesheet' href='/assets/css/animate.min.css'>
-	<link rel='stylesheet' href="/assets/css/font-awesome.min.css" />
-	<link rel='stylesheet' href="/assets/css/style.css" />
+	<link rel='stylesheet' href="/assets/css/font-awesome.min.css"/>
+	<link rel='stylesheet' href="/assets/css/style.css"/>
 
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
@@ -26,216 +26,260 @@
 	<!-- Favicon -->
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
 	<script type="text/javascript" src="/assets/js/dataVisual.js"></script>
 </head>
-
 <body>
-	<!-- Begin Hero Bg -->
+<!-- Begin Hero Bg -->
 
-	<!-- End Hero Bg
+<!-- End Hero Bg
 	================================================== -->
-	<!-- Start Header
+<!-- Start Header
 	================================================== -->
-	<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner" style="height: 70px">
-		<div class="container">
-			<div class="navbar-header">
-				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner" style="height: 70px">
+<div class="container">
+	<div class="navbar-header">
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 		<span class="sr-only">Toggle navigation</span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-				<!-- Your Logo -->
-				<a href="#hero" class="navbar-brand">反毒<span class="lighter">儀表板</span></a>
-			</div>
-			<!-- Start Navigation -->
-			<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
-				<ul class="nav navbar-nav">
-					<li>
-						<a href="/">首頁</a>
-					</li>
-					<li>
-						<a href="/dashboard">儀表板</a>
-					</li>
-					<li>
-						<a href="/dataMarket">資料市集</a>
-					</li>
-					<li>
-						<a href="/about">關於</a>
-					</li>
-					<!--<li>
+		<!-- Your Logo -->
+		<a href="#hero" class="navbar-brand">反毒<span class="lighter">儀表板</span></a>
+	</div>
+	<!-- Start Navigation -->
+	<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+	<ul class="nav navbar-nav">
+		<li>
+		<a href="/">首頁</a>
+		</li>
+		<li>
+		<a href="/dashboard">儀表板</a>
+		</li>
+        <li>
+		<a href="/dataMarket">資料市集</a>
+		</li>
+		<li>
+		<a href="/about">關於</a>
+		</li>
+		<!--<li>
 		<a href="#faq">FAQ</a>
 		</li>
 		<li>
 		<a href="#contactarea">Contact</a>
 		</li>-->
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<!-- Gallery
+	</ul>
+	</nav>
+</div>
+</header>
+<!-- Gallery
 	================================================== -->
-	<section id="gallery" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/2.jpg);">
-		<div class="wrapsection">
-			<div class="parallax-overlay" style="background-color:#00c1c1;opacity:0.9;"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="maintitle">
-							<h3 class="section-title">資料視覺化設定</h3>
-						</div>
-						<div class="data">
-							<h4>各年齡層毒品資料</h4>
-							<table>
-								<tbody class="first">
-									<tr>
-										<td>描述</td>
-										<td>本資料是各年齡層犯罪紀錄資料</td>
-									</tr>
-									<tr>
-										<td>資料集提供機關名稱</td>
-										<td>衛福部</td>
-									</tr>
-									<tr>
-										<td>資料類型</td>
-										<td>XML</td>
-									</tr>
-									<tr>
-										<td>轉換後資料類型</td>
-										<td>jason</td>
-									</tr>
-									<tr>
-										<td>資料更新頻率</td>
-										<td>month</td>
-									</tr>
-									<tr>
-										<td>資料開始收集時間</td>
-										<td>民國70年</td>
-									</tr>
-									<tr>
-										<td>資料來源</td>
-										<td>http://www.rjsd.moj.gov.tw/rjsdweb/book/Book.aspx?category_id=9</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="data">
-							<h4>欄位說明</h4>
-							<table>
-								<tbody class="second">
-									<tr>
-										<th>欄位</th>
-										<th>中文名稱</th>
-										<th>資料類型</th>
-										<th>單位</th>
-									</tr>
-									<tr>
-										<td>year</td>
-										<td>民國年分</td>
-										<td>date</td>
-										<td>年</td>
-									</tr>
-									<tr>
-										<td>invest</td>
-										<td>偵查件數</td>
-										<td>unsigned integer</td>
-										<td>人</td>
-									</tr>
-									<tr>
-										<td>indictment</td>
-										<td>偵查終結 偵查件數</td>
-										<td>unsigned integer</td>
-										<td>件</td>
-									</tr>
-									<tr>
-										<td>prosecution</td>
-										<td>偵查終結 偵查件數</td>
-										<td>unsigned integer</td>
-										<td>件</td>
-									</tr>
-									<tr>
-										<td>guilty</td>
-										<td>判決確定執行有罪人數</td>
-										<td>unsigned integer</td>
-										<td>人</td>
-									</tr>
-									<tr>
-										<td>drugUseOnly</td>
-										<td>純施用毒品人數</td>
-										<td>unsigned integer</td>
-										<td>人</td>
-									</tr>
-									<tr>
-										<td>newCriminal</td>
-										<td>新入監毒品受刑人數</td>
-										<td>unsigned integer</td>
-										<td>人</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<form action="/api/dataVisual" method="post">
-								<h4>視覺化選項</h4>
-								<fieldset>
-									<legend>圖表類型</legend>
-									<label for="bar">長條圖</label>
-									<input type="radio" name="type" id="bar" value="bar">
-									<label for="line">折線圖</label>
-									<input type="radio" name="type" id="line" value="line">
-									<label for="scatter">XY散布圖</label>
-									<input type="radio" name="type" id="scatter" value="scatter">
-								</fieldset>
-								<fieldset>
-									<legend>X軸資料欄位</legend>
-									<label for="columnX1">資料欄位1</label>
-									<input type="radio" name="type" id="columnX1" value="資料欄位1">
-									<label for="columnX2">資料欄位2</label>
-									<input type="radio" name="type" id="columnX2" value="資料欄位2">
-									<label for="columnX3">資料欄位3</label>
-									<input type="radio" name="type" id="columnX3" value="資料欄位3">
-									<label for="columnX4">資料欄位4</label>
-									<input type="radio" name="type" id="columnX4" value="資料欄位4">
-								</fieldset>
-								<fieldset>
-									<legend>Y軸資料欄位</legend>
-									<label for="columnY1">資料欄位1</label>
-									<input type="radio" name="type" id="columnY1" value="資料欄位1">
-									<label for="columnY2">資料欄位2</label>
-									<input type="radio" name="type" id="columnY2" value="資料欄位2">
-									<label for="columnY3">資料欄位3</label>
-									<input type="radio" name="type" id="columnY3" value="資料欄位3">
-									<label for="columnY4">資料欄位4</label>
-									<input type="radio" name="type" id="columnY4" value="資料欄位4">
-								</fieldset>
-								<input class="submit" type="submit" name="submit" value="送出" />
-								<input class="submit" type="submit" name="revised" value="修改" />
-						</form>
+<section id="gallery" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/2.jpg);">
+<div class="wrapsection">
+	<div class="parallax-overlay" style="background-color:#00c1c1;opacity:0.9;"></div>
+	<div class="container">
+		<!--<div class="row">
+			<div class="col-md-12 sol-sm-12">
+				<div class="maintitle">
+					<h3 class="section-title">Events Gallery</h3>
+					<p class="lead wow flipInX">
+						Have a look at your past events gallery, see how much fun we have while helping people all over the world. Join our community today!
+					</p>
+				</div>
+			</div>
 
-	<!-- Placed at the end of the document so the pages load faster -->
+			<div class="col-md-4">
+				<a href="https://ununsplash.imgix.net/photo-1429277158984-614d155e0017?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
+					<img src="https://ununsplash.imgix.net/photo-1429277158984-614d155e0017?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
+					<div class="description">
+						<span class="caption">This is <b>awesome</b></span>
+						<span class="camera"><i class="fa fa-camera"></i></span>
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://unsplash.imgix.net/uploads/14115408840644deb16b0/2dc933e3?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
+				<img src="https://unsplash.imgix.net/uploads/14115408840644deb16b0/2dc933e3?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
+					<div class="description">
+						<span class="caption">Great <b>marathon</b></span>
+						<span class="camera"><i class="fa fa-link"></i></span>
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://ununsplash.imgix.net/photo-1429277096327-11ee3b761c93?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
+				<img src="https://ununsplash.imgix.net/photo-1429277096327-11ee3b761c93?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
+					<div class="description">
+						<span class="caption">Running <b>miles</b></span>
+						<span class="camera"><i class="fa fa-heart"></i></span>
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://unsplash.imgix.net/uploads/141327328038701afeede/eda0fb7c?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
+				<img src="https://unsplash.imgix.net/uploads/141327328038701afeede/eda0fb7c?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
+					<div class="description">
+						<span class="caption">Young <b>volunteers</b></span>
+						<span class="camera"><i class="fa fa-tachometer"></i></span>
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://ununsplash.imgix.net/photo-1418225043143-90858d2301b4?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
+				<img src="https://ununsplash.imgix.net/photo-1418225043143-90858d2301b4?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
+					<div class="description">
+						<span class="caption">Charity <b>concerts</b></span>
+						<span class="camera"><i class="fa fa-microphone"></i></span>
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<a href="https://unsplash.imgix.net/photo-1428908799722-0a74e26ce7f6?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description">
+				<img src="https://unsplash.imgix.net/photo-1428908799722-0a74e26ce7f6?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive">
+					<div class="description">
+						<span class="caption">Generous <b>sponsors</b></span>
+						<span class="camera"><i class="fa fa-coffee"></i></span>
+						<div class="clearfix"></div>
+					</div>
+				</a>
+			</div>
+		</div>-->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="maintitle">
+					<h3 class="section-title">資料視覺化設定</h3>
+				</div>
+				<div class="data">
+					<h4 >各年齡層毒品資料</h4>
+					<table>
+						<tbody class="first">
+							<tr>
+							<td>描述</td>
+							<td><%= data.description %></td>
+							</tr>
+							<tr>
+							<td>資料集提供機關名稱</td>
+							<td><%= data.provider %></td>
+							</tr>
+							<tr>
+							<td>資料類型</td>
+							<td><%= data.dataType %></td>
+							</tr>
+							<tr>
+							<td>轉換後資料類型</td>
+							<td><%= data.convertDataType %></td>
+							</tr>
+							<tr>
+							<td>資料更新頻率</td>
+							<td><%= data.updateFreq %></td>
+							</tr>
+							<tr>
+							<td>資料開始收集時間</td>
+							<td><%= data.dateUnit %> <%= data.dateFrom %></td>
+							</tr>
+							<tr>
+							<td>資料來源</td>
+							<td><%= data.source %></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="data">
+					<h4 >欄位說明</h4>
+					<table>
+						<tbody class="second">
+							<tr>
+								<th>欄位</th>
+								<th>中文名稱</th>
+								<th>資料類型</th>
+								<th>單位</th>
+							</tr>
+                            <% data.column.forEach(function(element) { %>
+							<tr>
+							<td><%= element.name %></td>
+							<td><%= element.description %></td>
+							<td><%= element.type %></td>
+							<td><%= element.unit %></td>
+							</tr>
+							<%});%>
 
-	<!--<script src="assets/js/jquery.min.js"></script>-->
+						</tbody>
+					</table>
+				</div>
 
-	<script src="/assets/js/bootstrap.min.js"></script>
-
-	<script src="/assets/js/waypoints.min.js"></script>
-
-	<script src="/assets/js/jquery.scrollTo.min.js"></script>
-
-	<script src="/assets/js/jquery.localScroll.min.js"></script>
-
-	<script src="/assets/js/jquery.magnific-popup.min.js"></script>
-
-	<script src="/assets/js/validate.js"></script>
-
-	<script src="/assets/js/common.js"></script>
-
-	<script src="/assets/js/dashboard.js"></script>
-
-
+				<form id="visualSettinge" action="/api/dataVisual" method="post">
+					<h4>視覺化選項</h4>
+					<fieldset>
+						<legend>圖表類型</legend>
+						<label for="bar">長條圖</label>
+						<input type="radio" name="type" id="bar" value="bar">
+						<label for="line">折線圖</label>
+						<input type="radio" name="type" id="line" value="line">
+						<label for="scatter">XY散布圖</label>
+						<input type="radio" name="type" id="scatter" value="scatter">
+					</fieldset>
+					<fieldset>
+						<legend>X軸資料欄位</legend>
+						<label for="columnX1">資料欄位1</label>
+						<input type="radio" name="type" id="columnX1" value="資料欄位1">
+						<label for="columnX2">資料欄位2</label>
+						<input type="radio" name="type" id="columnX2" value="資料欄位2">
+						<label for="columnX3">資料欄位3</label>
+						<input type="radio" name="type" id="columnX3" value="資料欄位3">
+						<label for="columnX4">資料欄位4</label>
+						<input type="radio" name="type" id="columnX4" value="資料欄位4">
+					</fieldset>
+					<fieldset>
+						<legend>Y軸資料欄位</legend>
+						<label for="columnY1">資料欄位1</label>
+						<input type="radio" name="type" id="columnY1" value="資料欄位1">
+						<label for="columnY2">資料欄位2</label>
+						<input type="radio" name="type" id="columnY2" value="資料欄位2">
+						<label for="columnY3">資料欄位3</label>
+						<input type="radio" name="type" id="columnY3" value="資料欄位3">
+						<label for="columnY4">資料欄位4</label>
+						<input type="radio" name="type" id="columnY4" value="資料欄位4">
+					</fieldset>
+					<input class="submit" type="submit" name="submit" value="送出" />
+					<input class="submit" type="submit" name="revised" value="修改" />
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!-- Credits
+=============================================== -->
+<section id="credits" class="text-center">
+	<span class="social wow zoomIn">
+	<a href="#"><i class="fa fa-facebook"></i></a>
+	<a href="#"><i class="fa fa-twitter"></i></a>
+	<a href="#"><i class="fa fa-skype"></i></a>
+	<a href="#"><i class="fa fa-linkedin"></i></a>
+	<a href="#"><i class="fa fa-pinterest"></i></a>
+	<a href="#"><i class="fa fa-google-plus"></i></a>
+	</span><br/>
+	Copyright &copy; <a href="#">Your Agency</a>
+	<br/>Template By <i class="fa fa-heart"></i> WowThemes.Net
+</section>
+<!-- Bootstrap core JavaScript
+	================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script src="assets/js/jquery.min.js"></script>-->
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/waypoints.min.js"></script>
+<script src="/assets/js/jquery.scrollTo.min.js"></script>
+<script src="/assets/js/jquery.localScroll.min.js"></script>
+<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="/assets/js/validate.js"></script>
+<script src="/assets/js/common.js"></script>
+<script src="/assets/js/dashboard.js"></script>
 
 </body>
-
-
-
 </html>
