@@ -1,5 +1,4 @@
 const views = require('koa-views')
-const mysql = require('mysql')
 const detail = require('../models/dataDetail')
 
 let dataVisual = async(ctx) => {
