@@ -24,7 +24,10 @@
 	<![endif]-->
 			
 	<!-- Favicon -->
+<<<<<<< HEAD
+=======
 	<!-- <link rel="shortcut icon" href="#"> -->
+>>>>>>> 72f4b03b79360a3dd4e4f1ab14670a43ec849dbd
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
@@ -89,38 +92,44 @@
 				</div>
 			</div>
 			<div class="block">
-                <table>
-                    <tbody>
-                        <tr><td style="font-weight:bold; font-size:38px; color:#2E9AFE;">各年齡層毒品犯罪</td><td style="font-size:15px">XML</td></tr>
-                         <tr><td style="font-size:15px">衛福部</td></tr>
-                         <tr><td style="font-size:15px">資料收集時間:</td><td style="font-size:15px">民國70年</td></tr>
-                         <tr><td style="font-size:15px">是否收費:</td><td style="font-size:15px">否</td></tr>
-                        <tr><td style="font-size:20px">本資料是各年齡層犯罪紀錄資料</td></tr>
-                    </tbody> 
-                </table>
-                <form id="contact" name="contact" method="post" class="text-left">
-					<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s" style="float: right;margin-right:20px">
-						<input id="submit" type="submit" name="submit" value="Detail" onclick="location.href='/dataVisual/drugCriminal';" />
-					</div>
+				<form id="contact" name="contact" method="post" class="text-left">
+						<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s" style="float: right;margin-top:150px;margin-right:20px">
+								<input id="submit" type="submit" name="submit" value="Detail" onclick="location.href='/dataVisual/drugCriminal';"/>
+						</div>
 				</form>
+                <div class="content" style="margin-left:20px;width:870px;height:250px;">
+					
+                        <font style="font-weight:bold; font-size:38px; color:#2E9AFE;width:350px">各年齡層毒品犯罪</font>
+						<span class="fileType-bg" >XML</span>
+                    	<br><font style="font-size:20px">本資料是各年齡層犯罪紀錄資料</font>
+						<hr>
+
+						<font  style="font-size:15px; width:25%; margin-right:20px">提供資料單位: 衛福部</font>
+						<font  style="font-size:15px; margin-right:20px">資料收集時間: 民國70年</font>
+						<font  style="font-size:15px">是否收費: 否</font>
+                </div>
+                
 			</div>
-            <div class="block">
-			    <table>
-                    <tbody>
-                        <tr><td style="font-weight:bold; font-size:38px; color:#2E9AFE;">各年齡層毒品犯罪</td></tr>
-                         <tr><td style="font-size:15px">XML</td><td style="font-size:15px">衛福部</td></tr>
-                         <tr><td style="font-size:15px">資料收集時間:</td><td style="font-size:15px">民國70年</td></tr>
-                         <tr><td style="font-size:15px">是否收費:</td><td style="font-size:15px">否</td></tr>
-                        <tr><td style="font-size:20px">本資料是各年齡層犯罪紀錄資料</td></tr>
-                    </tbody> 
-                </table>
-                <form id="contact" name="contact" method="post" class="text-left">
-					<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s" style="float: right;margin-right:20px">
-						<input id="submit" type="submit" name="submit" value="Detail"/>
-					</div>
+           <div class="block">
+				<form id="contact" name="contact" method="post" class="text-left">
+						<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s" style="float: right;margin-top:150px;margin-right:20px">
+								<input id="submit" type="submit" name="submit" value="Detail" onclick="location.href='/dataVisual/drugCriminal';"/>
+						</div>
 				</form>
+                <div class="content" style="margin-left:20px;width:870px;height:250px;">
+					
+                        <font style="font-weight:bold; font-size:38px; color:#2E9AFE;width:350px">各年齡層毒品犯罪</font>
+						<span class="fileType-bg" >XML</span>
+                    	<br><font style="font-size:20px">本資料是各年齡層犯罪紀錄資料</font>
+						<hr>
+						<font style="font-size:15px; width:25%; margin-right:20px">提供資料單位: 衛福部</font>
+						<font style="font-size:15px; margin-right:20px">資料收集時間: 民國70年</font>
+						<font style="font-size:15px">是否收費: 否</font>
+					
+                </div>
+                
 			</div>
-            <% rows.forEach(function(data) { %>
+            <!--<% rows.forEach(function(data) { %>
                 <div class="block" style="background-color:#FF3F6F; width:1050px; height:200px; margin-bottom:20px">
                 <table >
                         <tbody>
@@ -129,7 +138,7 @@
                     </tbody>
                 </table>
                 </div>
-            <% }); %>
+            <% }); %>-->
 		</div>
 	</div>
 </div>

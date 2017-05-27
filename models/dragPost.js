@@ -3,12 +3,12 @@
  */
 const query = require('../utils/dbConnect')
 
-let detail = {
-    async getDataList(parmas) {
-        let _sql = `SELECT * FROM datalist WHERE name=?;
+let drag = {
+    async setPos(parmas) {
+        let _sql = `UPDATE dashboard SET top=?, \`left\`=? WHERE id=?;
         `
         let result = await query(_sql, parmas)
         return result
     }
 }
-module.exports = detail
+module.exports = drag
