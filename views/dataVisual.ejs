@@ -62,9 +62,7 @@
 					<li>
 						<a href="/dataMarket">資料市集</a>
 					</li>
-					<li>
-						<a href="/about">關於</a>
-					</li>
+
 					<!--<li>
 		<a href="#faq">FAQ</a>
 		</li>
@@ -219,8 +217,9 @@
 				<input id="dataName" type="hidden" name="dataName" value="<%= myname %>" />
 				<input id="data_id" type="hidden" name="data_id" value="<%= data.id %>" />
 				<form id="visualSettinge" action="/api/dataVisual" method="post"><br>	
-					<h5 >圖表類型</h5>
+					
 					<fieldset class="dataframe">
+						<h5 >圖表類型</h5>
 						<div class="bar" >
 						<input type="radio" name="type" id="bar" value="bar">
 						<label for="bar">長條圖</label>
