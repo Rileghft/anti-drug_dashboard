@@ -176,7 +176,7 @@ $(function(){
 
     $( ".modify_btn" ).click(function() {
         console.log($(this).val());
-        //window.location.href='/dataVisual/';
+        window.location.href = '/dataVisual/' + $(this).val() + '?mode=modify';
     });
 
 

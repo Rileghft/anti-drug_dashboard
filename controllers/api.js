@@ -29,7 +29,7 @@ let dashboard = {
         ctx.body = result
     },
     async nameToID(ctx) {
-        let name = ctx.request.body.name
+        let name = ctx.request.body
         console.log(name)
         let result = await dataVisual.nameToID(name)
         console.log(result)
