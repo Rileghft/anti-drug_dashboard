@@ -15,4 +15,6 @@ app.use(views(path.join(__dirname, './views'), {
 }))
 app.use(route.routes()).use(route.allowedMethods())
 app.listen(config.port)
-console.log(`Hackthon anti-drug dashboard server start on port ${config.port}`)
+console.log(`http://localhost:${config.port}`)
+console.log(`http://localhost:${config.port}/dashboard`)
+console.log(`http://localhost:${config.port}/dataMarket`)

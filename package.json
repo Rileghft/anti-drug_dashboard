@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "anti-drug hackthon",
   "main": "index.js",
-  "repository": "git@github.com:Rileghft/anti-drug_dashboard.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Rileghft/anti-drug_dashboard.git"
+  },
   "author": "Yang, Shun-Yu",
   "license": "MIT",
   "dependencies": {
@@ -14,5 +17,13 @@
     "koa-router": "^7.2.0",
     "koa-views": "^6.0.2",
     "path": "^0.12.7"
+  },
+  "bugs": {
+    "url": "https://github.com/Rileghft/anti-drug_dashboard/issues"
+  },
+  "homepage": "https://github.com/Rileghft/anti-drug_dashboard#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
