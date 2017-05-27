@@ -1,0 +1,10 @@
+.remove_btn{
+    top:-33px!important;
+    position: relative;
+    z-index: 99;
+}
+.modify_btn{
+    top:-33px!important;
+    position: relative;
+    z-index: 99;
+}
