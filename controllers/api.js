@@ -8,7 +8,13 @@ let dashboard = {
     },
     async addComp(ctx) {
         let params = ctx.request.body
-        let result = await dataVisual.addComp(params)
+        let config = params
+        config.dataID = parseInt(config.dataID)
+        config.top = parseInt(config.top)
+        config.left = parseInt(config.left)
+        config.width = parseInt(config.width)
+        config.height = parseInt(config.height)
+        let result = await dataVisual.addComp(config)
         ctx.body = result
     },
     async updateComp(ctx) {
