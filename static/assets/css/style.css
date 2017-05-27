@@ -1,14 +1,35 @@
-
+.bar, .line, .scatter, .x_aix, .y_aix{
+	width:150px;
+	margin-left: 30px;
+	float: left;
+	
+}
+#visualSettinge{
+	width: 800px;
+	height: 350px;
+	margin: 0px auto;
+	background: #FFF;
+	border-radius:10px;
+}
 .send{
 	float: right;
+}
+.dataframe{
+
+	margin-left:10px;
+}
+.dataframe h5{
+	color: #3498db;
+}
+.bar, .line, .scatter, .x_aix, .y_aix{
+	width: 800px;
+	margin: 0px auto;
+	color: #848484;
 }
 .data{
 	width: 800px;
 	margin: 0px auto;
-}
-.data>h4{
-	font-weight: bold;
-
+	margin-bottom:10px;
 }
 .second>tr>th{
 	background-color: #dddddd;
@@ -33,7 +54,7 @@ td, th {
     background-color: #dddddd;
 }
 
-#vischoice{
+.bar, .line, .scatter, .x_aix, .y_aix{
 	width:150px;
 	margin-left: 30px;
 	float: left;
@@ -441,7 +462,7 @@ label {
 }
 /*	Parallax Background	==================================================*/
 #parallax {
-	height:95%;
+	height:93%;
 	width:100%;
 	top:0;
 	position:fixed;
@@ -451,7 +472,7 @@ label {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: 110% 120%;
 	z-index: -100;
 }
 /*	Navbar	==================================================*/
@@ -502,7 +523,7 @@ label {
 }
 #hero h1 {
 	font-size:55px;
-	top:50%;
+	margin-bottom:180px;
 }
 #hero p.lead {
 	font-size:1.4em;
@@ -706,7 +727,7 @@ label {
 		height:40px;
 	margin-bottom:0px;
 }
-#contact input#submit {
+#contact input.submit {
 	width:auto;
 	margin-top:20px;
 	background-color:rgba(0,0,0,0.3);

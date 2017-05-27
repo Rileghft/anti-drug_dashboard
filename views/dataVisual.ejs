@@ -154,7 +154,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="maintitle">
-					<h3 class="section-title">資料視覺化設定</h3>
+					<h3 class="section-title">詳細資料與視覺化設定</h3>
 				</div>
 				<div class="data">
 					<h4 >各年齡層毒品資料</h4>
@@ -214,33 +214,47 @@
 					</table>
 				</div>
 
-				<form id="visualSettinge" action="/api/dataVisual" method="post">
-					<h4>視覺化選項</h4>
-					<fieldset>
-						<legend>圖表類型</legend>
-						<label for="bar">長條圖</label>
+				<h4 class="data">視覺化設定選項</h4>
+					<form id="visualSettinge" action="/api/dataVisual" method="post"><br>
+					<fieldset class="dataframe">
+						<h5 >圖表類型</h5>
+						<div class="bar" >
 						<input type="radio" name="type" id="bar" value="bar">
-						<label for="line">折線圖</label>
+						<label for="bar">長條圖</label>
+						</div>
+						<div class="line" >
 						<input type="radio" name="type" id="line" value="line">
-						<label for="scatter">XY散布圖</label>
+						<label for="line">折線圖</label>
+						</div>
+						<div class="scatter" >
 						<input type="radio" name="type" id="scatter" value="scatter">
+						<label for="scatter">XY散布圖</label>
+						</div>
 					</fieldset>
-					<fieldset>
-						<legend>X軸資料欄位</legend>
+					<fieldset class="dataframe">
+						<h5>X軸資料欄位</h5>
+						
                         <% data.column.forEach(function(element, i) { %>
-						<label for="columnX<%= i %>"><%= element.name %></label>
+						<div class="x_aix" >
 						<input type="radio" name="x" id="columnX<%= i %>" value="<%= element.name %>">
+						<label for="columnX<%= i %>"><%= element.name %></label>
+						</div>
                         <% });%>
+						
 					</fieldset>
-					<fieldset>
-						<legend>Y軸資料欄位</legend>
+					<fieldset class="dataframe">
+						<h5>Y軸資料欄位</h5>
                         <% data.column.forEach(function(element, i) { %>
-						<label for="columnY<%= i %>"><%= element.name %></label>
+						<div class="y_aix" >
 						<input type="radio" name="y" id="columnY<%= i %>" value="<%= element.name %>">
+						<label for="columnY<%= i %>"><%= element.name %></label>
+						</div>
                         <% });%>
 					</fieldset>
-					<input class="submit" type="submit" name="submit" value="送出" />
-					<input class="submit" type="submit" name="revised" value="修改" />
+					<div id="contact" class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s" style="float: right;margin-top:50px;margin-right:20px">
+						<input class="submit" type="submit" name="submit" value="送出" />
+						<input class="submit" type="submit" name="revised" value="修改" />
+					</div>
 				</form>
 			</div>
 		</div>
@@ -250,16 +264,8 @@
 <!-- Credits
 =============================================== -->
 <section id="credits" class="text-center">
-	<span class="social wow zoomIn">
-	<a href="#"><i class="fa fa-facebook"></i></a>
-	<a href="#"><i class="fa fa-twitter"></i></a>
-	<a href="#"><i class="fa fa-skype"></i></a>
-	<a href="#"><i class="fa fa-linkedin"></i></a>
-	<a href="#"><i class="fa fa-pinterest"></i></a>
-	<a href="#"><i class="fa fa-google-plus"></i></a>
-	</span><br/>
-	Copyright &copy; <a href="#">Your Agency</a>
-	<br/>Template By <i class="fa fa-heart"></i> WowThemes.Net
+	Copyright &copy; <a>yzu_cse</a>
+
 </section>
 <!-- Bootstrap core JavaScript
 	================================================== -->
