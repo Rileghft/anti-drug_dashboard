@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
 	<!-- Meta, title, CSS, favicons, etc. -->
 	<meta charset="utf-8">
@@ -26,7 +26,8 @@
 	<!-- Favicon -->
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
+	<script type="text/javascript" src="/assets/js/dataVisual.js"></script>
 </head>
 <body>
 <!-- Begin Hero Bg -->
@@ -154,24 +155,102 @@
 				<div class="maintitle">
 					<h3 class="section-title">資料視覺化設定</h3>
 				</div>
-				<div>
-					<h4 >資料名稱</h4>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
+				<div class="data">
+					<h4 >各年齡層毒品資料</h4>
+					<table>
+						<tbody class="first">
+							<tr>
+							<td>描述</td>
+							<td>本資料是各年齡層犯罪紀錄資料</td>
+							</tr>
+							<tr>
+							<td>資料集提供機關名稱</td>
+							<td>衛福部</td>
+							</tr>
+							<tr>
+							<td>資料類型</td>
+							<td>XML</td>
+							</tr>
+							<tr>
+							<td>轉換後資料類型</td>
+							<td>jason</td>
+							</tr>
+							<tr>
+							<td>資料更新頻率</td>
+							<td>month</td>
+							</tr>
+							<tr>
+							<td>資料開始收集時間</td>
+							<td>民國70年</td>
+							</tr>
+							<tr>
+							<td>資料來源</td>
+							<td>http://www.rjsd.moj.gov.tw/rjsdweb/book/Book.aspx?category_id=9</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<div>
+				<div class="data">
+					<h4 >欄位說明</h4>
+					<table>
+						<tbody class="second">
+							<tr>
+								<th>欄位</th>
+								<th>中文名稱</th>
+								<th>資料類型</th>
+								<th>單位</th>
+							</tr>
+							<tr>
+							<td>year</td>
+							<td>民國年分</td>
+							<td>date</td>
+							<td>年</td>
+							</tr>
+							<tr>
+							<td>invest</td>
+							<td>偵查件數</td>
+							<td>unsigned integer</td>
+							<td>人</td>
+							</tr>
+							<tr>
+							<td>indictment</td>
+							<td>偵查終結 偵查件數</td>
+							<td>unsigned integer</td>
+							<td>件</td>
+							</tr>
+							<tr>
+							<td>prosecution</td>
+							<td>偵查終結 偵查件數</td>
+							<td>unsigned integer</td>
+							<td>件</td>
+							</tr>
+							<tr>
+							<td>guilty</td>
+							<td>判決確定執行有罪人數</td>
+							<td>unsigned integer</td>
+							<td>人</td>
+							</tr>
+							<tr>
+							<td>drugUseOnly</td>
+							<td>純施用毒品人數</td>
+							<td>unsigned integer</td>
+							<td>人</td>
+							</tr>
+							<tr>
+							<td>newCriminal</td>
+							<td>新入監毒品受刑人數</td>
+							<td>unsigned integer</td>
+							<td>人</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<form action="/dashboard" method="get">
+				<div class="data">
 					<h4 >視覺化選項</h4>
-					<form>
 					<div id="vischoice">
 					<input id="100" type="radio" name="choice" value="histo"> 
 					<label for="100">長條圖</label>
-					</div>
-					<div id="vischoice">
-					<input id="101" type="radio" name="choice" value="pie">
-					<label for="101">圓餅圖</label>
 					</div>
 					<div id="vischoice">
 					<input id="102" type="radio" name="choice" value="xy_chart"> 
@@ -181,59 +260,58 @@
 					<input id="103" type="radio" name="choice" value="line">
 					<label for="103">折線圖</label>
 					</div>
-					</form>
-					<br>
-					<br>
 					<br>
 					<br>
 				</div>
-				<div>
-					<h4 >選擇資料欄位</h4>
+				<div class="data">
+					<h4 >選擇X軸資料欄位</h4>
 					<div id="vischoice">
-					<input id="104" type="checkbox" name="choice" value="data1"> 
+					<input id="104" type="radio" name="choice" value="data1"> 
 					<label for="104">資料欄位1</label>
 					</div>
 					<div id="vischoice">
-					<input id="105" type="checkbox" name="choice" value="data2">
+					<input id="105" type="radio" name="choice" value="data2">
 					<label for="105">資料欄位2</label>
 					</div>
 					<div id="vischoice">
-					<input id="106" type="checkbox" name="choice" value="data3"> 
+					<input id="106" type="radio" name="choice" value="data3"> 
 					<label for="106">資料欄位3</label>
 					</div>
 					<div id="vischoice">
-					<input id="107" type="checkbox" name="choice" value="data4">
+					<input id="107" type="radio" name="choice" value="data4">
 					<label for="107">資料欄位4</label>
 					</div>
 					<br>
 					<br>
-					<br>
-					<br>
 				</div>
-				<div>
-					<h4 >視覺化參數</h4>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-				</div>
-				<form id="contact" name="contact" method="post" class="text-left">
-					<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-						<input id="submit" type="submit" name="submit" value="Send"/>
+				<div class="data">
+					<h4 >選擇Ｙ軸資料欄位</h4>
+					<div id="vischoice">
+					<input id="108" type="radio" name="choice" value="data1"> 
+					<label for="108">資料欄位1</label>
 					</div>
+					<div id="vischoice">
+					<input id="109" type="radio" name="choice" value="data2">
+					<label for="109">資料欄位2</label>
+					</div>
+					<div id="vischoice">
+					<input id="110" type="radio" name="choice" value="data3"> 
+					<label for="110">資料欄位3</label>
+					</div>
+					<div id="vischoice">
+					<input id="111" type="radio" name="choice" value="data4">
+					<label for="111">資料欄位4</label>
+					</div>
+					<br>
+					<br>
+				</div>
+					<div id="contact" class="send wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
+						<input id="submit" type="submit" name="submit" value="送出"/>
+						<input id="submit" type="submit" name="view" value="預覽" />
+						<input id="submit" type="submit" name="revised" value="修改"/>
+					</div>
+				
 				</form>
-				<div id="success">		
-					<p class="contactalert">
-						Your message was sent succssfully! I will be in touch as soon as I can.
-					</p>			
-				</div>
-				<div id="error">			
-					<p class="contactalert">
-						 Something went wrong, try refreshing and submitting the form again.
-					</p>			
-				</div>
-
 			</div>
 		</div>
 	</div>
