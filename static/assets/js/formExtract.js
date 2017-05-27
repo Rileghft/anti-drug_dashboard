@@ -11,7 +11,7 @@ function formExtract() {
     let coly = checkedItem[2].value
     let result = {
         type: chartType.value,
-        columns: `[\"${colx}\",\"${coly}\"]`
+        columns: [colx, coly]
     }
     return result
 }
@@ -20,8 +20,9 @@ function getDataID() {
     $.ajax({
         type: "POST",
         url: '/api/dataVisual/nameToID',
-        data: {name: $('dataName').val()},
+        data: {name: $('#dataName').val()},
         dataType: 'json',
+        async: false,
         success: (data) => {
             dataID = data.id
         },
@@ -31,7 +32,7 @@ function getDataID() {
     })
 }
 
-function getVisualSetting() {
+function sendVisualSetting() {
     let formData = formExtract()
     if (formData === undefined) {
         return
