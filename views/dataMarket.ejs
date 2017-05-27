@@ -51,19 +51,16 @@
 	<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
 	<ul class="nav navbar-nav">
 		<li>
-		<a href="home.ejs">首頁</a>
+		<a href="/">首頁</a>
 		</li>
 		<li>
-		<a href="dashboard.ejs">儀表板</a>
+		<a href="/dashboard">儀表板</a>
 		</li>
         <li>
-		<a href="dataMarket.ejs">資料市集</a>
+		<a href="/dataMarket">資料市集</a>
 		</li>
 		<li>
-		<a href="dataVisual.ejs">資料視覺化設定</a>
-		</li>
-		<li>
-		<a href="about.ejs">關於</a>
+		<a href="/about">關於</a>
 		</li>
 		<!--<li>
 		<a href="#faq">FAQ</a>
@@ -91,12 +88,11 @@
 					</p>-->
 				</div>
 			</div>
-<<<<<<< HEAD
 			<div class="block">
                 <table>
                     <tbody>
-                        <tr><td style="font-weight:bold; font-size:38px; color:#2E9AFE;">各年齡層毒品犯罪</td></tr>
-                         <tr><td style="font-size:15px">XML</td><td style="font-size:15px">衛福部</td></tr>
+                        <tr><td style="font-weight:bold; font-size:38px; color:#2E9AFE;">各年齡層毒品犯罪</td><td style="font-size:15px">XML</td></tr>
+                         <tr><td style="font-size:15px">衛福部</td></tr>
                          <tr><td style="font-size:15px">資料收集時間:</td><td style="font-size:15px">民國70年</td></tr>
                          <tr><td style="font-size:15px">是否收費:</td><td style="font-size:15px">否</td></tr>
                         <tr><td style="font-size:20px">本資料是各年齡層犯罪紀錄資料</td></tr>
@@ -104,7 +100,7 @@
                 </table>
                 <form id="contact" name="contact" method="post" class="text-left">
 					<div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s" style="float: right;margin-right:20px">
-						<input id="submit" type="submit" name="submit" value="Detail"/>
+						<input id="submit" type="submit" name="submit" value="Detail" onclick="location.href='/dataVisual/drugCriminal';" />
 					</div>
 				</form>
 			</div>
@@ -124,7 +120,6 @@
 					</div>
 				</form>
 			</div>
-=======
             <% rows.forEach(function(data) { %>
                 <div class="block" style="background-color:#FF3F6F; width:1050px; height:200px; margin-bottom:20px">
                 <table >
@@ -135,7 +130,6 @@
                 </table>
                 </div>
             <% }); %>
->>>>>>> 86ce713b97ccc438a17f751162736451dc3eadac
 		</div>
 	</div>
 </div>
