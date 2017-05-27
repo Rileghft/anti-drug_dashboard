@@ -1,4 +1,3 @@
-var isPost = true
 var dataID = undefined
 function formExtract() {
     let checkedItem = $('input:checked')
@@ -32,6 +31,10 @@ function getDataID() {
     })
 }
 
+function addOrUpdate() {
+    return $('#btn_modify').length === 0
+}
+
 function sendVisualSetting() {
     let formData = formExtract()
     if (formData === undefined) {
@@ -47,7 +50,7 @@ function sendVisualSetting() {
     visualConfig.dataID = dataID
     let isValid = configValidate()
     if (isValid) {
-        if (isPost) {
+        if (addOrUpdate()) {
             addComp()
         }
         else {
