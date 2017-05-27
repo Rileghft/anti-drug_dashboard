@@ -91,6 +91,7 @@
 					</p>-->
 				</div>
 			</div>
+<<<<<<< HEAD
 			<div class="block">
                 <table>
                     <tbody>
@@ -123,11 +124,22 @@
 					</div>
 				</form>
 			</div>
+=======
+            <% rows.forEach(function(data) { %>
+                <div class="block" style="background-color:#FF3F6F; width:1050px; height:200px; margin-bottom:20px">
+                <table >
+                        <tbody>
+                    <tr><td><%= data.title %></td></tr>
+                    <tr><td><%= data.description %></td></tr>
+                    </tbody>
+                </table>
+                </div>
+            <% }); %>
+>>>>>>> 86ce713b97ccc438a17f751162736451dc3eadac
 		</div>
 	</div>
 </div>
 </section>
-
 <!-- Credits 
 =============================================== -->
 <section id="credits" class="text-center">
