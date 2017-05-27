@@ -3,7 +3,7 @@ const mysql = require('mysql')
 const market = require('../models/dataMarket')
 
 let dataMarket = async(ctx) => {
-    rows = await market.getDataList(null)
+    let rows = await market.getDataList([])
     await ctx.render('dataMarket', rows=rows)
 }
 
