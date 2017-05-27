@@ -91,50 +91,30 @@
 					</p>-->
 				</div>
 			</div>
+            <% row.forEach(function(data) { %>
 			<div class="block">
 					<div id="contact" class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s" style="float: right;margin-top:150px;margin-right:20px">
-							<input id="submit" type="submit" name="submit" value="Detail" onclick="location.href='/dataVisual/drugCriminal';"/>
+							<input class="submit" type="submit" name="submit" value="Detail" onclick="location.href='/dataVisual/<%= data.name %>';"/>
 					</div>
                 <div class="content" style="margin-left:20px;width:870px;height:250px;">
 					
-                        <font style="font-weight:bold; font-size:38px; color:#2E9AFE;width:350px">各年齡層毒品犯罪</font>
-						<span class="fileType-bg" >XML</span>
-                    	<br><font style="font-size:20px">本資料是各年齡層犯罪紀錄資料</font>
+                        <font style="font-weight:bold; font-size:38px; color:#2E9AFE;width:350px"><%= data.title %></font>
+						<span class="fileType-bg" ><%= data.dataType %></span>
+                    	<br><font style="font-size:20px"><%= data.description %></font>
 						<hr>
 
-						<font  style="font-size:15px; width:25%; margin-right:20px">提供資料單位: 衛福部</font>
-						<font  style="font-size:15px; margin-right:20px">資料收集時間: 民國70年</font>
-						<font  style="font-size:15px">是否收費: 否</font>
+						<font  style="font-size:15px; width:25%; margin-right:20px">提供資料單位: <%= data.provider %></font>
+						<font  style="font-size:15px; margin-right:20px">資料收集時間: <%= data.dataUnit %><%= data.dateFrom %>年</font>
+						<% if(data.fee == 'free'){%>
+							<font  style="font-size:15px">是否收費: 否</font>
+						<%} else{ %>>
+							<font  style="font-size:15px">是否收費: 是</font>
+						<%}%>
                 </div>
                 
 			</div>
-           <div class="block">
-				<div id="contact" class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s" style="float: right;margin-top:150px;margin-right:20px">
-							<input id="submit" type="submit" name="submit" value="Detail" onclick="location.href='/dataVisual/drugCriminal';"/>
-				</div>
-                <div class="content" style="margin-left:20px;width:870px;height:250px;">
-					
-                        <font style="font-weight:bold; font-size:38px; color:#2E9AFE;width:350px">各年齡層毒品犯罪</font>
-						<span class="fileType-bg" >XML</span>
-                    	<br><font style="font-size:20px">本資料是各年齡層犯罪紀錄資料</font>
-						<hr>
-						<font style="font-size:15px; width:25%; margin-right:20px">提供資料單位: 衛福部</font>
-						<font style="font-size:15px; margin-right:20px">資料收集時間: 民國70年</font>
-						<font style="font-size:15px">是否收費: 否</font>
-					
-                </div>
-                
-			</div>
-            <!--<% rows.forEach(function(data) { %>
-                <div class="block" style="background-color:#FF3F6F; width:1050px; height:200px; margin-bottom:20px">
-                <table >
-                        <tbody>
-                    <tr><td><%= data.title %></td></tr>
-                    <tr><td><%= data.description %></td></tr>
-                    </tbody>
-                </table>
-                </div>
-            <% }); %>-->
+
+            <% }); %>
 		</div>
 	</div>
 </div>
@@ -164,7 +144,6 @@
 <script src="/assets/js/jquery.magnific-popup.min.js"></script>
 <script src="/assets/js/validate.js"></script>
 <script src="/assets/js/common.js"></script>
-<script src="/assets/js/dashboard.js"></script>
 
 </body>
 </html>

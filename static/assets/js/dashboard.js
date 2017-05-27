@@ -81,7 +81,7 @@ $(function(){
                         "<button type='button' class='btn remove_btn pull-right btn-info btn-sm' value="+data.id+">" +
                         "<span class='glyphicon glyphicon-remove'></span> Rwmove" +
                         "</button>" +
-                        "<button type='button' class='btn modify_btn pull-right btn-info btn-sm' value="+data.id+">" +
+                        "<button type='button' class='btn modify_btn pull-right btn-info btn-sm' value="+data.name+">" +
                         "<span class='glyphicon glyphicon-pencil'></span> modify" +
                         "</button>" +
                         " </div>" );
@@ -160,8 +160,8 @@ $(function(){
     renderPloty();
 
     $( ".remove_btn" ).click(function() {
-        /*$.ajax({
-            url: '/dataVisual',
+        $.ajax({
+            url: '/api/dataVisual/',
             type: 'delete',
             dataType: 'json',
             async: false,
@@ -169,13 +169,14 @@ $(function(){
             success: function (datas) {
 
             }
-        });*/
-        //location.reload();
-        console.log($(this).val());
+        });
+        location.reload();
+        //console.log($(this).val());
     });
 
     $( ".modify_btn" ).click(function() {
-
+        console.log($(this).val());
+        //window.location.href='/dataVisual/';
     });
 
 

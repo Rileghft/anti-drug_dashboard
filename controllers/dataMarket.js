@@ -4,7 +4,8 @@ const market = require('../models/dataMarket')
 
 let dataMarket = async(ctx) => {
     let rows = await market.getDataList([])
-    await ctx.render('dataMarket', rows=rows)
+    console.log(rows);
+    await ctx.render('dataMarket', row=rows)
 }
 
 module.exports = dataMarket

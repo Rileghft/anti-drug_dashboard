@@ -3,12 +3,11 @@
  */
 const views = require('koa-views')
 const mysql = require('mysql')
-const VisualPost = require('../models/dataVisualPost')
-
+const data = require('./data')
 let VisualPost = async(ctx) => {
-
-    //console.log(rows)
-    await ctx.render('dataVisual')
+    await data.description(ctx)
+    console.log(ctx.body)
+    await ctx.render('dataVisual', rows=ctx.body)
 }
 
 module.exports = VisualPost
