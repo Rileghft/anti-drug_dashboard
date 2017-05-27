@@ -28,6 +28,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
 	<script type="text/javascript" src="/assets/js/dataVisual.js"></script>
+	<script type="text/javascript" src="/assets/js/formExtract.js"></script>
 </head>
 
 <body>
@@ -215,9 +216,11 @@
 				</div>
 
 				<h4 class="data">視覺化設定選項</h4>
-					<form id="visualSettinge" action="/api/dataVisual" method="post"><br>
+				<input id="dataName" type="hidden" name="dataName" value="<%= myname %>" />
+				<input id="data_id" type="hidden" name="data_id" value="<%= data.id %>" />
+				<form id="visualSettinge" action="/api/dataVisual" method="post"><br>	
+					<h5 >圖表類型</h5>
 					<fieldset class="dataframe">
-						<h5 >圖表類型</h5>
 						<div class="bar" >
 						<input type="radio" name="type" id="bar" value="bar">
 						<label for="bar">長條圖</label>
@@ -252,8 +255,11 @@
                         <% });%>
 					</fieldset>
 					<div id="contact" class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s" style="float: right;margin-top:50px;margin-right:20px">
-						<input class="submit" type="submit" name="submit" value="送出" />
-						<input class="submit" type="submit" name="revised" value="修改" />
+						<% if(mode == 'modify'){%>
+						<input id="btn_modify" class="submit" type="button" name="revised" value="修改" onclick="sendVisualSetting()" />
+						<%} else{ %>
+						<input id="btn_send" class="submit" type="button" name="submit" value="送出" onclick="sendVisualSetting()"/>
+						<% }%>
 					</div>
 				</form>
 			</div>
