@@ -13,12 +13,19 @@ let dashboard = {
     },
     async updateComp(ctx) {
         let params = ctx.request.body
+        params.id = parseInt(params.id)
+        let config = params.config
+        config.dataID = parseInt(config.dataID)
+        config.top = parseInt(config.top)
+        config.left = parseInt(config.left)
+        config.width = parseInt(config.width)
+        config.height = parseInt(config.height)
         let result = await dataVisual.updateComp(params.id, params.config)
         ctx.body = result
     },
     async deleteComp(ctx) {
         let params = ctx.request.body
-        let result = await dataVisual.removeComp(params.id)
+        let result = await dataVisual.removeComp(parseInt(params.id))
         ctx.body = result
     }
 }

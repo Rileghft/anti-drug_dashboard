@@ -21,8 +21,6 @@ $(function(){
     }
 
     function barChart(id, x, y, title){
-        console.log(x);
-        console.log(y);
         var data = [
             {
                 x: x,
@@ -48,7 +46,6 @@ $(function(){
                 $.each(datas, function( i, data ) {
                     $( "#plotly" ).append( "<div class='chart wow zoomIn' id='" + data.type + "_" + data.id +"'></div>" );
                     $("#"+data.type+"_"+data.id).css({top: data.top, left:data.left, width:data.width, height:data.height});
-                    console.log(data.name);
 
                     $.ajax({
                         url: '/data/' + data.name ,
@@ -60,12 +57,9 @@ $(function(){
                             var y = [];
                             $.each(dataDetails, function( i, dataDetail ) {
                                 var columns = eval(data.columns);
-                                console.log(columns[0]);
                                 x.push(dataDetail[columns[0]]);
                                 y.push(dataDetail[columns[1]]);
                             });
-                            console.log(x);
-                            console.log(y);
                             if (data.type == 'pie') {
                                 pieChart(data.id, x, y);
                             }

@@ -24,9 +24,12 @@ let dataVisual = {
         let result = await query(_sql, id)
         return result
     },
-    async updateComp(compID, parmas) {
+    async updateComp(compID, params) {
         let _sql = `UPDATE dashboard SET ? WHERE id = ?;`
-        let result = await query(_sql, [parmas, compID])
+        let cols = params.columns
+        let colstr = cols.map(r => `\"${r}\"`)
+        params.columns = `[${colstr.join()}]`
+        let result = await query(_sql, [params, compID])
         return result
     }
 }
