@@ -15,6 +15,18 @@ function formExtract() {
     return result
 }
 
+function setCompID() {
+    let urlPath = location.href.split('?')
+    if (urlPath.length < 2) {
+        return
+    }
+    let queryStr = urlPath[1]
+    let search = new URLSearchParams(queryStr)
+    if (search.has('id')) {
+        compID = parseInt(search.get('id'))
+    }
+}
+
 function getDataID() {
     $.ajax({
         type: "POST",
@@ -54,6 +66,7 @@ function sendVisualSetting() {
             addComp()
         }
         else {
+            setCompID()
             updateComp()
         }
     }
