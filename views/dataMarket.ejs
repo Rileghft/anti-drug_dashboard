@@ -91,22 +91,21 @@
 			</div>
             <% row.forEach(function(data) { %>
 			<div class="block">
-					<div id="contact" class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s" style="float: right;margin-top:150px;margin-right:20px">
+					<div id="contact" class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s" style="float: right;margin-top:173px;margin-right:20px">
 							<input id="submit" class="submit" type="submit" name="submit" value="詳細資料" onclick="location.href='/dataVisual/<%= data.name %>';"/>
 					</div>
-                <div class="content" style="margin-left:20px;width:870px;height:250px;">
+                <div class="content" style="margin-left:20px;width:870px;height:250px;position:relative;">
 					
                         <font style="font-weight:bold; font-size:38px; color:#2E9AFE;width:350px"><%= data.title %></font>
 						<span class="fileType-bg" ><%= data.dataType %></span>
                     	<br><font style="font-size:20px"><%= data.description %></font>
-						<hr>
-
-						<font  style="font-size:15px; width:25%; margin-right:20px">提供資料單位: <%= data.provider %></font>
-						<font  style="font-size:15px; margin-right:20px">資料收集時間: <%= data.dataUnit %><%= data.dateFrom %>年</font>
+						<br>
+						<font  style="font-size:15px; position: absolute;bottom: 0;margin-bottom:20px;">提供資料單位: <%= data.provider %></font>
+						<font  style="font-size:15px; margin-left:250px;position: absolute;bottom: 0;margin-bottom:20px;">資料收集時間: <%= data.dataUnit %><%= data.dateFrom %>年</font>
 						<% if(data.fee == 'free'){%>
-							<font  style="font-size:15px">是否收費: 否</font>
+							<font  style="font-size:15px;margin-left:500px;position: absolute;bottom: 0;margin-bottom:20px;">是否收費: 否</font>
 						<%} else{ %>>
-							<font  style="font-size:15px">是否收費: 是</font>
+							<font  style="font-size:15px;margin-left:500px;position: absolute;bottom: 0;margin-bottom:20px;">是否收費: 是</font>
 						<%}%>
                 </div>
                 
