@@ -79,10 +79,10 @@ $(function(){
                 $.each(datas, function( i, data ) {
                     $( "#plotly" ).append( "<div class='chart wow zoomIn' id='" + data.type + "_" + data.id +"'>" +
                         "<button type='button' class='btn remove_btn pull-right btn-info btn-sm' value="+data.id+">" +
-                        "<span class='glyphicon glyphicon-remove'></span> Rwmove" +
+                        "<span class='glyphicon glyphicon-remove'></span> 刪除" +
                         "</button>" +
                         "<button type='button' class='btn modify_btn pull-right btn-info btn-sm' value="+data.name+"_"+data.id+">" +
-                        "<span class='glyphicon glyphicon-pencil'></span> modify" +
+                        "<span class='glyphicon glyphicon-pencil'></span> 修改" +
                         "</button>" +
                         " </div>" );
                     /*
@@ -179,7 +179,6 @@ $(function(){
         var id = $(this).val().split('_')[1];
         window.location.href = '/dataVisual/' + name + '?mode=modify&id=' + id;
     });
-
 
 
     var data = [
