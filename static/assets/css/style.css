@@ -217,12 +217,12 @@ img {
 .btn-default,.label-default {
 	border-color:#FFF;
 	color:#fff;
-	background-color:transparent;
+	background-color:#FFF;
 	border-width:2px;
 	padding:15px 20px;
 }
 .btn-default:hover,.btn-default:focus {
-	background-color:#F9FAFD;
+	background-color:#FFC3D6;
 	border-color:#F9FAFD;
 	color:#444;
 }
