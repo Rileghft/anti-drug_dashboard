@@ -1,0 +1,78 @@
+{
+    "name": "新入監毒品受刑人統計",
+    "description": "法務部新入監毒品受刑人統計表",
+    "source": "http://www.rjsd.moj.gov.tw/rjsdweb/book/Book.aspx?category_id=9",
+    "provider": "法務部統計處",
+    "fee": "free",
+    "dataType": "xls",
+    "convertDataType": "json",
+    "updateFreq": "month",
+    "needCrawl": true,
+    "newestOnly": true,
+    "needClean": true,
+    "needMerge": false,
+    "dateUnit": "民國",
+    "dateFrom": "89",
+    "column": [
+        {
+            "name": "year",
+            "description": "民國年分",
+            "type": "date",
+            "unit": "年"
+        },
+        {
+            "name": "total",
+            "description": "新入監毒品總受刑人數",
+            "type": "unsigned integer",
+            "unit": "人"
+        },
+        {
+            "name": "first-class",
+            "description": "一級毒品受刑人數",
+            "type": "unsigned integer",
+            "unit": "人"
+        },
+        {
+            "name": "second-class",
+            "description": "二級毒品受刑人數",
+            "type": "unsigned integer",
+            "unit": "人"
+        },
+        {
+            "name": "third-class",
+            "description": "三級毒品受刑人數",
+            "type": "unsigned integer",
+            "unit": "人"
+        },
+        {
+            "name": "fourth-class",
+            "description": "四級毒品受刑人數",
+            "type": "unsigned integer",
+            "unit": "人"
+        },
+        {
+            "name": "mics-class",
+            "description": "其他種類毒品受刑人數",
+            "type": "unsigned integer",
+            "unit": "人"
+        },
+        {
+            "name": "drugProducerTransporter",
+            "description": "犯罪類型 製造運輸毒品犯罪人數",
+            "type": "unsigned integer",
+            "unit": "人"
+        },
+        {
+            "name": "drugUse",
+            "description": "犯罪類型 施用毒品犯罪人數",
+            "type": "unsigned integer",
+            "unit": "人"
+        },
+        {
+            "name": "mics",
+            "description": "犯罪類型 其他毒品犯罪人數",
+            "type": "unsigned integer",
+            "unit": "人"
+        }
+    ]
+}
