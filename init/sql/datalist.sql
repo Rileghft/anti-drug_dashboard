@@ -16,3 +16,7 @@ CREATE TABLE datalist (
 INSERT INTO `datalist` 
 (name, title, provider, description, dataType, dateFrom, dateUnit, fee)
 VALUES("drugCriminal", "毒品案件辦理情", "法務部統計處", "法務部毒品案件辦理情況統計表", "json", 88, "民國", "free");
+
+INSERT INTO `datalist` 
+(name, title, provider, description, dataType, dateFrom, dateUnit, fee)
+VALUES("newDrugCriminal", "新入監毒品受刑人統", "法務部統計處", "法務部新入監毒品受刑人統計", "json", 89, "民國", "free");
