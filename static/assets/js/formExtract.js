@@ -15,6 +15,7 @@ function formExtract() {
     return result
 }
 
+//set compID from dataVisual
 function setCompID() {
     let urlPath = location.href.split('?')
     if (urlPath.length < 2) {
